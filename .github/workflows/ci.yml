@@ -18,7 +18,7 @@ jobs:
           python-version: 3.12
       
       - name: Install requirements
-        run: pip install --no-cache-dir -r requirements.txt
+        run: pip install --no-cache-dir -r requirements-dev.txt
 
       - name: Run lint
         run: bash scripts/lint.sh 
@@ -37,7 +37,7 @@ jobs:
           python-version: 3.12
       
       - name: Install requirements
-        run: pip install --no-cache-dir -r requirements.txt
+        run: pip install --no-cache-dir -r requirements-dev.txt
 
       - name: Run tests
         run: python -m pytest app/tests -v
@@ -56,7 +56,7 @@ jobs:
           python-version: 3.12
       
       - name: Install requirements
-        run: pip install --no-cache-dir -r requirements.txt
+        run: pip install --no-cache-dir -r requirements-dev.txt
 
       - name: Run tests
         run: echo "build_completed"
